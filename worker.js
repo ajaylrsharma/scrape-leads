@@ -1,7 +1,7 @@
 import 'dotenv/config';
 import { Worker } from 'bullmq';
 import IORedis from 'ioredis';
-import { ApifyClient } from '@apify/client';
+import { ApifyClient } from 'apify-client';
 import OpenAI from 'openai';
 import pLimit from 'p-limit';
 import { google } from 'googleapis';

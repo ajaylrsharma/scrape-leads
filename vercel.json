@@ -3,6 +3,7 @@
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "framework": null,
+  "outputDirectory": "public",
   "functions": {
     "api/index.js": {
       "maxDuration": 30

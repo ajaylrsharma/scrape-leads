@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07111f" />
+  <title>ScrapeLeads — Verified business leads, ready to sell</title>
+  <meta name="description" content="Scrape, verify, enrich and classify business leads from Maps, LinkedIn, search engines and directories." />
+  <meta property="og:title" content="ScrapeLeads — Verified business leads, ready to sell" />
+  <meta property="og:description" content="Scrape, verify, enrich and classify business leads from Maps, LinkedIn, search engines and directories." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ScrapeLeads — Verified business leads, ready to sell" />
+  <meta name="twitter:description" content="Scrape, verify, enrich and classify business leads from Maps, LinkedIn, search engines and directories." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4113112840945038" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="noise"></div>
+  <aside class="sidebar">
+    <a class="brand" href="#"><span class="brand-mark">S</span><span>Scrape<span>Leads</span></span></a>
+    <nav>
+      <button class="nav-item active" data-view="dashboard"><span>⌁</span> New scrape</button>
+      <button class="nav-item" data-view="runs"><span>◫</span> Lead runs <b id="runBadge">2</b></button>
+      <button class="nav-item" data-view="integrations"><span>◇</span> Integrations</button>
+      <button class="nav-item" data-view="settings"><span>⚙</span> Settings</button>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="adsense-sidebar" aria-label="Advertisement">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-4113112840945038"
+             data-ad-slot="1234567892"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+      </div>
+      <div class="plan-card"><div><span>Growth plan</span><strong>7,420 credits left</strong></div><div class="meter"><i></i></div><small>Renews Oct 1</small></div>
+      <div class="profile"><div class="avatar">AS</div><div><strong>Ajay Sharma</strong><span>Workspace owner</span></div><button>•••</button></div>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+      <button class="mobile-menu">☰</button>
+      <div class="breadcrumb"><span>Workspace</span><b>/</b><strong id="viewTitle">New lead scrape</strong></div>
+      <div class="header-actions"><button class="icon-btn" aria-label="Notifications">♧<i></i></button><button class="help-btn">? <span>Help</span></button></div>
+    </header>
+
+    <section id="dashboard" class="view active">
+      <div class="adsense-banner" aria-label="Advertisement">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-4113112840945038"
+             data-ad-slot="1234567890"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+      </div>
+      <div class="hero-copy">
+        <div><span class="eyebrow">AI-POWERED PROSPECTING</span><h1>Build a verified lead list<br><em>while you do other work.</em></h1><p>Choose your market, sources and buying signals. ScrapeLeads finds, verifies and enriches the right prospects.</p></div>
+        <div class="trust-row"><span>● Email verification</span><span>● Duplicate removal</span><span>● Responsible rate limits</span></div>
+      </div>
+
+      <form id="scrapeForm" class="builder">
+        <div class="steps"><button class="step active" type="button" data-step="1"><b>1</b><span>Target</span></button><i></i><button class="step" type="button" data-step="2"><b>2</b><span>Sources</span></button><i></i><button class="step" type="button" data-step="3"><b>3</b><span>Enrichment</span></button><i></i><button class="step" type="button" data-step="4"><b>4</b><span>Delivery</span></button></div>
+
+        <div class="form-page active" data-page="1">
+          <div class="section-heading"><span>01</span><div><h2>Who are you looking for?</h2><p>Define an industry and location. You can target anything from dentists in Mumbai to SaaS companies in Helsinki.</p></div></div>
+          <div class="grid two">
+            <label><span>Business type / industry <i>Required</i></span><div class="input-wrap"><u>⌕</u><input id="industry" required value="Dentists" placeholder="e.g. Dentists, solar installers, SaaS" /></div></label>
+            <label><span>Location <i>Required</i></span><div class="input-wrap"><u>⌖</u><input id="location" required value="Mumbai, India" placeholder="City, region or country" /></div></label>
+          </div>
+          <div class="grid three">
+            <label><span>Maximum leads</span><select id="limit"><option>100</option><option selected>250</option><option>500</option><option>1,000</option></select></label>
+            <label><span>Language</span><select><option selected>English</option><option>Hindi</option><option>Finnish</option></select></label>
+            <label><span>Search radius</span><select><option>10 km</option><option selected>25 km</option><option>50 km</option><option>Entire region</option></select></label>
+          </div>
+          <div class="query-preview"><span>⌁</span><div><strong>Live query preview</strong><code>"dentist" + "mumbai" + contact OR email</code></div><button type="button" id="regenerate">Regenerate</button></div>
+        </div>
+
+        <div class="form-page" data-page="2">
+          <div class="section-heading"><span>02</span><div><h2>Where should we search?</h2><p>Combine high-intent sources for broader coverage. Recommended actors are pre-selected.</p></div></div>
+          <div class="source-grid">
+            <label class="source checked"><input type="checkbox" checked data-source="Google Maps"><div class="source-icon maps">G</div><div><strong>Google Maps</strong><span>Business listings, phone, ratings, websites</span><small>Apify · compass/crawler</small></div><b>✓</b></label>
+            <label class="source checked"><input type="checkbox" checked data-source="Google Search"><div class="source-icon google">G</div><div><strong>Google Search</strong><span>Directories, mentions and public contact pages</span><small>apify/google-search-scraper</small></div><b>✓</b></label>
+            <label class="source checked"><input type="checkbox" checked data-source="LinkedIn"><div class="source-icon linkedin">in</div><div><strong>LinkedIn decision-makers</strong><span>Owners, founders and relevant leaders</span><small>curated_crawler/linkedin-search-scraper</small></div><b>✓</b></label>
+            <label class="source"><input type="checkbox" data-source="Yelp"><div class="source-icon yelp">Y</div><div><strong>Yelp</strong><span>Local businesses missed by Maps</span><small>Apify marketplace actor</small></div><b>✓</b></label>
+            <label class="source"><input type="checkbox" data-source="Yellow Pages"><div class="source-icon yellow">YP</div><div><strong>Yellow Pages</strong><span>Established and offline-first businesses</span><small>Apify marketplace actor</small></div><b>✓</b></label>
+            <label class="source checked"><input type="checkbox" checked data-source="Website crawl"><div class="source-icon scrapling">S</div><div><strong>Adaptive website crawl</strong><span>Contact pages, services and buying signals</span><small>Scrapling · adaptive crawler</small></div><b>✓</b></label>
+          </div>
+          <div class="notice"><span>i</span><div><strong>Respectful by design</strong><p>Only publicly available business information is collected. Rate limits and source terms must be configured before production use.</p></div></div>
+        </div>
+
+        <div class="form-page" data-page="3">
+          <div class="section-heading"><span>03</span><div><h2>Turn raw listings into qualified prospects</h2><p>Verify contact data and let the LLM classify each company against your buying criteria.</p></div></div>
+          <div class="toggle-stack">
+            <label><div><strong>Email discovery & verification</strong><span>Find public business emails and flag deliverability.</span></div><input type="checkbox" checked><i></i></label>
+            <label><div><strong>Decision-maker enrichment</strong><span>Match owner, founder or role from LinkedIn.</span></div><input type="checkbox" checked><i></i></label>
+            <label><div><strong>Phone normalization</strong><span>Format numbers to E.164 and remove duplicates.</span></div><input type="checkbox" checked><i></i></label>
+            <label><div><strong>LLM classification</strong><span>Score fit, summarize the company and explain why it qualifies.</span></div><input type="checkbox" checked><i></i></label>
+          </div>
+          <div class="criteria-box"><div class="criteria-head"><div><strong>Custom buying signals</strong><span>Ask up to 6 yes/no or classification questions per lead.</span></div><button type="button" id="addCriteria">+ Add criterion</button></div><div id="criteriaList">
+            <div class="criterion"><span>01</span><input value="Does this business currently run Google Ads?"/><select><option>Yes / No / Unknown</option></select><button type="button" class="remove">×</button></div>
+            <div class="criterion"><span>02</span><input value="Does this dentist offer cosmetic dentistry (whitening or veneers)?"/><select><option>Yes / No / Unknown</option></select><button type="button" class="remove">×</button></div>
+            <div class="criterion"><span>03</span><input value="Is the website mobile-friendly?"/><select><option>Yes / No / Unknown</option></select><button type="button" class="remove">×</button></div>
+          </div></div>
+        </div>
+
+        <div class="form-page" data-page="4">
+          <div class="section-heading"><span>04</span><div><h2>Where should the finished leads go?</h2><p>Choose one or more destinations and who should be notified when the background job is complete.</p></div></div>
+          <div class="grid two delivery-grid">
+            <label><span>Send results to <i>Required</i></span><div class="input-wrap"><u>✉</u><input id="email" required type="email" value="ajaylrsharma@gmail.com" placeholder="you@company.com" /></div><small>Job summary and secure download link</small></label>
+            <label><span>Notification method</span><select id="notify"><option selected>Email when complete</option><option>Email + webhook</option><option>Webhook only</option></select><small>Large runs continue safely in the background</small></label>
+            <label><span>Google Sheet name</span><div class="input-wrap"><u>▦</u><input id="sheet" value="Mumbai Dentist Leads — Sep 2026" /></div><small>A new tab is created for every run</small></label>
+            <label><span>Google Drive folder</span><select><option selected>My Drive / Lead databases</option><option>My Drive</option><option>Choose during connection…</option></select><small>Requires a connected Google account</small></label>
+            <label><span>CRM destination</span><select id="crm"><option selected>Do not push to CRM</option><option>HubSpot</option><option>Pipedrive</option><option>Salesforce</option></select><small>Create/update contacts only after validation</small></label>
+            <label><span>Webhook URL <em>Optional</em></span><div class="input-wrap"><u>↗</u><input id="webhook" type="url" placeholder="https://hooks.zapier.com/…" /></div><small>Zapier, Make.com or your own endpoint</small></label>
+          </div>
+          <label class="consent"><input id="consent" type="checkbox" checked><span>Remove duplicates across my previous runs and include source URLs for auditability.</span></label>
+          <div class="summary-card"><div><span>Estimated result</span><strong><b id="estimated">183–225</b> verified leads</strong></div><div><span>Estimated time</span><strong>6–12 minutes</strong></div><div><span>Estimated usage</span><strong>~320 credits</strong></div></div>
+        </div>
+
+        <div class="form-actions"><button type="button" class="secondary" id="backBtn" disabled>← Back</button><div><button type="button" class="ghost" id="saveDraft">Save draft</button><button type="button" class="primary" id="nextBtn">Choose sources <span>→</span></button></div></div>
+      </form>
+    </section>
+
+    <section id="runs" class="view">
+      <div class="page-heading"><div><span class="eyebrow">PIPELINE</span><h1>Lead runs</h1><p>Background jobs, enriched results and exports in one place.</p></div><button class="primary" data-go="dashboard">+ New scrape</button></div>
+      <div class="adsense-banner" aria-label="Advertisement">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-4113112840945038"
+             data-ad-slot="1234567891"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+      </div>
+      <div class="stats"><article><span>Total leads</span><strong>1,286</strong><small>↑ 18% this month</small></article><article><span>Verified emails</span><strong>842</strong><small>65.5% match rate</small></article><article><span>Qualified prospects</span><strong>514</strong><small>40.0% of total</small></article><article><span>Active job</span><strong>1</strong><small class="pulse">● Processing now</small></article></div>
+      <div class="table-card"><div class="table-head"><strong>Recent runs</strong><div><input placeholder="Search runs…"><button>Filters</button></div></div><div class="lead-row header"><span>Run</span><span>Sources</span><span>Progress</span><span>Leads</span><span>Delivery</span><span></span></div>
+        <div class="lead-row"><span><b class="run-icon">D</b><div><strong>Dentists · Mumbai</strong><small>Started a few seconds ago</small></div></span><span class="source-pills"><i>G</i><i>in</i><i>S</i></span><span><div class="progress"><i id="runProgress"></i></div><small id="progressText">Collecting sources · 12%</small></span><span id="leadCount">24</span><span><b class="status running">Running</b></span><button>•••</button></div>
+        <div class="lead-row"><span><b class="run-icon mint">S</b><div><strong>SaaS · Helsinki</strong><small>Sep 18, 2026</small></div></span><span class="source-pills"><i>G</i><i>in</i></span><span><strong>Completed</strong><small>7m 42s</small></span><span>196</span><span><b class="status done">Delivered</b></span><button class="download-small">↓ CSV</button></div>
+        <div class="lead-row"><span><b class="run-icon coral">C</b><div><strong>Cosmetic clinics · Delhi</strong><small>Sep 16, 2026</small></div></span><span class="source-pills"><i>G</i><i>Y</i></span><span><strong>Completed</strong><small>10m 03s</small></span><span>238</span><span><b class="status done">Delivered</b></span><button class="download-small">↓ CSV</button></div>
+      </div>
+    </section>
+
+    <section id="integrations" class="view">
+      <div class="page-heading"><div><span class="eyebrow">CONNECTIONS</span><h1>Integrations</h1><p>Connect once, then route every lead run automatically.</p></div></div>
+      <div class="integration-grid">
+        <article><div class="integration-logo google">G</div><div><strong>Google Sheets</strong><span>Create spreadsheets and tabs</span></div><b class="status done">Connected</b><button>Manage</button></article>
+        <article><div class="integration-logo apify">A</div><div><strong>Apify</strong><span>Maps, search and directory actors</span></div><b class="status done">Connected</b><button>Manage</button></article>
+        <article><div class="integration-logo openai">✦</div><div><strong>LLM provider</strong><span>Classification and summaries</span></div><b class="status done">Connected</b><button>Manage</button></article>
+        <article><div class="integration-logo hubspot">H</div><div><strong>HubSpot</strong><span>Push qualified contacts</span></div><b class="status idle">Not connected</b><button>Connect</button></article>
+        <article><div class="integration-logo pipedrive">P</div><div><strong>Pipedrive</strong><span>Create people and organizations</span></div><b class="status idle">Not connected</b><button>Connect</button></article>
+        <article><div class="integration-logo salesforce">☁</div><div><strong>Salesforce</strong><span>Create or update leads</span></div><b class="status idle">Not connected</b><button>Connect</button></article>
+      </div>
+    </section>
+
+    <section id="settings" class="view">
+      <div class="page-heading"><div><span class="eyebrow">WORKSPACE</span><h1>Settings</h1><p>Defaults, notifications and data handling.</p></div><button class="primary">Save changes</button></div>
+      <div class="settings-card"><h2>Run defaults</h2><div class="grid two"><label><span>Default results email</span><input type="email" value="ajaylrsharma@gmail.com"></label><label><span>Concurrent lead enrichment</span><select><option>5 at a time</option><option selected>10 at a time</option><option>20 at a time</option></select></label><label><span>Queue mode</span><select><option selected>BullMQ + Redis</option><option>In-process (development)</option></select></label><label><span>CSV delimiter</span><select><option selected>Comma (,)</option><option>Semicolon (;)</option></select></label></div><hr><h2>Email notification</h2><div class="grid two"><label><span>Sender name</span><input value="ScrapeLeads"></label><label><span>Reply-to address</span><input value="leads@yourcompany.com"></label><label><span>Completion email subject</span><input value="Your verified lead list is ready"></label><label><span>Failure notifications</span><select><option selected>Email after 2 retries</option><option>Email immediately</option><option>Webhook only</option></select></label></div></div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast"><span>✓</span><div><strong>Draft saved</strong><small>Your configuration is saved in this browser.</small></div></div>
+  <div id="jobModal" class="modal" aria-hidden="true"><div class="modal-card"><button class="modal-close">×</button><div class="success-orbit"><i></i><span>✓</span></div><span class="eyebrow">JOB QUEUED</span><h2>Your scrape is running in the background</h2><p>We'll email <strong id="modalEmail"></strong> when the verified Google Sheet and CSV are ready.</p><div class="job-meta"><span><small>Run</small><strong id="modalRun">Dentists · Mumbai</strong></span><span><small>Estimated time</small><strong>6–12 min</strong></span></div><div class="modal-actions"><button class="secondary modal-close">Close</button><button class="primary" id="viewRun">View run →</button></div></div></div>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>

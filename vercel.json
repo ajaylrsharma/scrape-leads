@@ -15,7 +15,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/$1"
+      "dest": "api/index.js"
     }
   ],
   "env": {

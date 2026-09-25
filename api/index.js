@@ -4,12 +4,15 @@ import IORedis from 'ioredis';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createServer } from 'node:http';
+import { readFileSync } from 'node:fs';
 
 const app = express();
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 app.use(express.json({ limit: '1mb' }));
-app.use(express.static(__dirname));
+
+// Serve static files
+app.use(express.static(path.join(__dirname, '..')));
 
 const memory = new Map();
 let queue;
@@ -51,6 +54,18 @@ app.get('/api/jobs/:id', async (req, res) => {
 });
 
 app.get('/health', (_, res) => res.json({ ok: true, queue: !!queue, mode: process.env.NODE_ENV || 'development' }));
+
+// SPA fallback - serve index.html for all non-API routes
+app.get('*', (req, res) => {
+  if (req.path.startsWith('/api/')) return res.sendStatus(404);
+  try {
+    const html = readFileSync(path.join(__dirname, '..', 'index.html'), 'utf-8');
+    res.setHeader('Content-Type', 'text/html');
+    res.send(html);
+  } catch {
+    res.sendStatus(404);
+  }
+});
 
 // For local development
 if (import.meta.url === `file://${process.argv[1]}`) {
